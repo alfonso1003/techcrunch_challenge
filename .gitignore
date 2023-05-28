@@ -1,0 +1,62 @@
+# Python
+*.pyc
+__pycache__/
+venv/
+env/
+*.egg-info/
+dist/
+build/
+*.egg
+
+# macOS
+.DS_Store
+
+# Git
+# /.gitignore
+/.gitattributes
+/.git
+/.gitmodules
+
+# VSCode
+.vscode/
+*.code-workspace
+
+# Mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pytest
+.pytest_cache/
+pytest.ini
+.coverage
+
+# Pylint
+.pylint/
+.pylintrc
+
+# sqllite
+*.db
+
+# Ignore Alembic migration files and directories
+/alembic/env.py
+/alembic/versions/
+/alembic.ini
+
+# Ignore Alembic generated script files
+/alembic/script.py.mako
+
+# Ignore Alembic database revision files
+/alembic/versions/*.py
+/alembic/versions/*.pyc
+/alembic/versions/*.pyo
+
+# Ignore Alembic database revision files (if using Python 3.8+)
+/alembic/versions/*.cpython-38.py
+/alembic/versions/*.cpython-38.pyc
+/alembic/versions/*.cpython-38.pyo
+
+# Ignore Alembic database revision files (if using Python 3.9+)
+/alembic/versions/*.cpython-39.py
+/alembic/versions/*.cpython-39.pyc
+/alembic/versions/*.cpython-39.pyo
