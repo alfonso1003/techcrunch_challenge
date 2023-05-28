@@ -1,3 +1,4 @@
+alembic
 bs4
 lxml
 pandas
