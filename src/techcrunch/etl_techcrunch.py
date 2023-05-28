@@ -36,7 +36,7 @@ def main() -> None:
 
     # load articles
     print("... Loading articles to database ...")
-    db = "./src/techcrunch/db/techcrunch.dbb"
+    db = "./src/techcrunch/db/techcrunch.db"
     articles_table = "articles"
     article_loader = DataLoader(article_df, database=db, table=articles_table)
     article_loader.load_data()

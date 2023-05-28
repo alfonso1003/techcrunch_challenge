@@ -2,7 +2,7 @@ import sqlite3
 
 
 def main():
-    conn = sqlite3.connect("./db/techcrunch.db")
+    conn = sqlite3.connect("./src/techcrunch/db/techcrunch.db")
     cursor = conn.cursor()
 
     drop_articles_if_exists = "DROP TABLE IF EXISTS articles"
