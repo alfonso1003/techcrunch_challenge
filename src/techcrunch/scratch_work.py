@@ -30,6 +30,6 @@ df = pd.DataFrame(
 df.index += 1
 
 
-conn = sqlite3.connect("./db/techcrunch.db")
+conn = sqlite3.connect("./src/techcrunch/db/techcrunch.db")
 df.to_sql("articles", conn, if_exists="replace", index_label="id")
 conn.close()

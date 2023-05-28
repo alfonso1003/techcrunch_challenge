@@ -1,4 +1,4 @@
-from .techcrunch import ArticleTransformer, AuthorTransformer, DataExtractor, DataLoader
+from etl import ArticleTransformer, AuthorTransformer, DataExtractor, DataLoader
 
 
 def main() -> None:
@@ -29,14 +29,14 @@ def main() -> None:
 
     # load authors
     print("... Loading authors to database ...")
-    db = "./db/techcrunch.db"
+    db = "./src/techcrunch/db/techcrunch.db"
     authors_table = "authors"
     author_loader = DataLoader(author_df, database=db, table=authors_table)
     author_loader.load_data()
 
     # load articles
     print("... Loading articles to database ...")
-    db = "./db/techcrunch.db"
+    db = "./src/techcrunch/db/techcrunch.dbb"
     articles_table = "articles"
     article_loader = DataLoader(article_df, database=db, table=articles_table)
     article_loader.load_data()

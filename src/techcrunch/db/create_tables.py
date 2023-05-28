@@ -21,7 +21,7 @@ def main():
                             name TEXT, 
                             url TEXT,
                             author_id INTEGER NOT NULL,
-                            FOREIGN KEY (author_id) REFERENCES properties (id));"""
+                            FOREIGN KEY (author_id) REFERENCES articles (id));"""
 
     cursor.execute(drop_articles_if_exists)
     cursor.execute(create_articles)

@@ -2,7 +2,7 @@ import sqlite3
 
 import pandas as pd
 
-conn: sqlite3.Connection = sqlite3.connect("./db/techcrunch.db")
+conn: sqlite3.Connection = sqlite3.connect("./src/techcrunch/db/techcrunch.db")
 
 query: str = (
     "SELECT * FROM articles JOIN authors ON articles.author_id = authors.author_id"

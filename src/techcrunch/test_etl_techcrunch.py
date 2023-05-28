@@ -1,6 +1,6 @@
 import unittest
 
-from .techcrunch import DataExtractor
+from etl import DataExtractor
 
 
 class TechCrunchTests(unittest.TestCase):
